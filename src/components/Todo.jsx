@@ -17,20 +17,31 @@ const Todo = () => {
 
 
   return (
-    <div className='todo-container'>         
-        <div>
-             <h1 style={{color:'white'}}>Todo List</h1>
-            <input type="text" placeholder='Input a new todo' value={newItem} onChange={(e)=>setNewItem(e.target.value)} />
-            <button onClick={handleAdd}>Add Todo</button>
+    <div className='todo-container'>   
+     <h1 style={{color:'white'}}>Todo List</h1>      
+        <div className='todo-input-container'>
+            <input type="text" className='todo-input' placeholder='Input a new todo' value={newItem} onChange={(e)=>setNewItem(e.target.value)} />
+            <button className='todo-add-btn' onClick={handleAdd}>Add Todo</button>
         </div>
-        <div className='todos-container'>
-            <ul className='todo-ul'>{todos.map((todo, index)=>(
-                <li key={index}>
-                    {todo} 
-                    <button onClick={()=>handleDelete(index)}>delete</button>
-                </li>
-            ))}</ul>
-        </div>   
+        <span style={{textAlign:'center', color:'white', fontSize:'25px', marginTop:'10px', textDecorationLine:'underline'}}>Your Todos</span>
+         <div className='todos-container'> 
+            <ul className='todo-ul'>
+                {todos.length > 0 ? (
+                todos.map((todo, index) => (
+                    <li key={index} >
+                        <div className='todo-items-container'>
+                            <span className='todos'>{todo}</span>
+                            <button className='todo-delete-btn' onClick={() => handleDelete(index)}>Delete</button>
+                    </div>
+                    </li>
+                ))
+                ) : (
+                <p style={{color:'white'}}>No Todos Added Yet</p>
+                )}
+            </ul>   
+
+         </div>
+ 
     </div>
   )
 }
