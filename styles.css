@@ -3,6 +3,7 @@ body{
     justify-content: center;
     align-items:center;
     background-color:rgb(23, 17, 17);
+    background-color:rgb(190, 179, 179);
     min-height: 100vh;
 }
 .counter-container{
@@ -16,7 +17,7 @@ body{
     width:fit-content;
     gap: 20px;
     border-radius: 20px;
-    background-color: rgb(4, 4, 8);
+    background-color: rgb(1, 1, 40);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +126,7 @@ text-align: center;
     cursor: pointer;
 }
 .todo-add-btn:hover{
-    color: rgb(101, 52, 199);
+    color: cyan;
     box-shadow: 2px 2px 1px green;
     transition: 0.5s;
 

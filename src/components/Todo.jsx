@@ -31,7 +31,7 @@ const Todo = () => {
                     <li key={index} >
                         <div className='todo-items-container'>
                             <span className='todos'>{todo}</span>
-                            <button className='todo-delete-btn' onClick={() => handleDelete(index)}>Delete</button>
+                            <button className='todo-delete-btn' onClick={() => handleDelete(index)}>x</button>
                     </div>
                     </li>
                 ))
