@@ -35,6 +35,7 @@ const Counter = () => {
 
     }
   return (
+   <div className='counter-container'>
     <div className='container'>
         <h1 className='heading'>counter / Timer</h1>
         <h1 className='number'>{count}</h1>
@@ -61,6 +62,7 @@ const Counter = () => {
       
         <button className='btn' onClick={() => setCount(0)}>Reset</button>
     </div>
+</div>
   )
 }
 

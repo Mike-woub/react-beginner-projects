@@ -3,7 +3,13 @@ body{
     justify-content: center;
     align-items:center;
     background-color:rgb(23, 17, 17);
+    min-height: 100vh;
+}
+.counter-container{
+    display: flex;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 .container{
     padding: 20px;
@@ -67,4 +73,13 @@ text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/*Todo list*/
+.todo-container{
+    min-height: 100vh;
+}
+.todo-ul{
+    list-style-type:disc;
+    color: white;
 }
