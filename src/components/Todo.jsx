@@ -11,6 +11,9 @@ const Todo = () => {
               setNewItem('');
             }
     }
+    const handleDelete=(indexToDelete)=>{
+        setTodos(todos.filter((_, index)=>index !== indexToDelete))
+    }
 
 
   return (
@@ -21,8 +24,11 @@ const Todo = () => {
             <button onClick={handleAdd}>Add Todo</button>
         </div>
         <div className='todos-container'>
-            <ul className=' '>{todos.map((todo, index)=>(
-                <li key={index}>{todo}</li>
+            <ul className='todo-ul'>{todos.map((todo, index)=>(
+                <li key={index}>
+                    {todo} 
+                    <button onClick={()=>handleDelete(index)}>delete</button>
+                </li>
             ))}</ul>
         </div>   
     </div>
