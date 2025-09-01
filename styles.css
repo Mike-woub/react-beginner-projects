@@ -156,6 +156,11 @@ display: flex;
   position: relative;
   display: grid;
 }
+.calculator span.back {
+
+  color: #eb4d4d;
+}
+
 
 .calculator .value {
   grid-column: span 4;
@@ -183,8 +188,7 @@ display: flex;
 }
 
 .calculator span.clear {
-  grid-column: span 2;
-  width: 120px;
+
   background: rgb(255, 163, 26);
   /* color: #fff; */
 }
@@ -196,5 +200,6 @@ display: flex;
 
 .calculator span.equal {
   background: rgb(255, 163, 26);
+  cursor: pointer;
   /* background: #03b1ff; */
 }
