@@ -41,6 +41,25 @@ A simple yet functional todo list with add and delete capabilities.
 
 ---
 
+## 🧮 Calculator App
+
+A responsive calculator with safe expression evaluation using `mathjs`.
+
+### Features
+- Button-based input (no typing required)
+- Backspace and clear functionality
+- Safe evaluation of expressions (no `eval`)
+- Error handling for invalid input
+- Styled with CSS Grid and Flexbox
+
+### Tech Stack
+- React (`useState`)
+- [mathjs](https://mathjs.org/) for secure expression parsing
+- CSS Grid for layout
+- Vite for fast refresh and build optimization
+
+---
+
 ## 📦 Getting Started
 
 To run the project locally:
